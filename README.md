@@ -18,7 +18,7 @@ Visit http://portal.azure.com.
 Create a new Storage account by:
 1) New > Data + Storage + Storage Account
 2) Enter the following details:
-- Name: Any name you want, e.g. rpitemp (rpitemp.core.windows.net)
+- **Name:** Any name you want, e.g. rpitemp (rpitemp.core.windows.net)
 - Deployment Model: Standard
 - Performance: Standard
 - Subscription: Select as required
