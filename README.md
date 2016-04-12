@@ -16,8 +16,8 @@ This guide will teach you how to upload temperature data from a Raspberry Pi to 
 Visit http://portal.azure.com.
 
 Create a new Storage account by:
-1) New > Data + Storage + Storage Account
-2) Enter the following details:  
+1) New > Data + Storage + Storage Account  
+2) Enter the following details:    
 **Name:** Any name you want, e.g. rpitemp (rpitemp.core.windows.net)  
 **Deployment Model:** Standard  
 **Performance:** Standard  
@@ -25,7 +25,7 @@ Create a new Storage account by:
 **Resource Group:** Select as required  
 **Location:** Select as required  
 
-3) Press Create. Your storage instance will now be created.
+3) Press Create. Your storage instance will now be created.  
 
 ## Wiring up the Raspberry Pi
 
