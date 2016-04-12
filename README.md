@@ -18,12 +18,12 @@ Visit http://portal.azure.com.
 Create a new Storage account by:
 1) New > Data + Storage + Storage Account
 2) Enter the following details:
-**Name:** Any name you want, e.g. rpitemp (rpitemp.core.windows.net)
-**Deployment Model:** Standard
-**Performance:** Standard
-**Subscription:** Select as required
-**Resource Group:** Select as required
-**Location:** Select as required
+**Name:** Any name you want, e.g. rpitemp (rpitemp.core.windows.net)  
+**Deployment Model:** Standard  
+**Performance:** Standard  
+**Subscription:** Select as required  
+**Resource Group:** Select as required  
+**Location:** Select as required  
 
 3) Press Create. Your storage instance will now be created.
 
