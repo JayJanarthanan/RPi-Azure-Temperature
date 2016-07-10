@@ -27,6 +27,9 @@ Create a new Storage account by:
 
 3) Press Create. Your storage instance will now be created.  
 
+
+![alt tag](images/1.png)
+
 4) Once it has been created, find and save the access keys, mainly:
 - Storage Account Name
 - Access keys (KEY1)  
@@ -35,13 +38,14 @@ Create a new Storage account by:
 
 ## Wiring up the Raspberry Pi
 
-If you are using a normal DS18B20 sensor, you will need to use a 4.7k resistor for pullup. The other option is the DS18B20-PAR sensor, which is parasitic and can be plugged in directly into the Raspberry Pi.
+If you are using a normal DS18B20 sensor, you will need to use a 4.7k resistor for pullup. The other option is the DS18B20-PAR sensor, which is parasitic and can be plugged in directly into the Raspberry Pi. We have used the PAR sensor for this tutorial for simplicity. 
 
 Please follow this diagram to connect your sensor to the Raspberry Pi:
 
 ## The Raspberry Pi Code
 
-The easy part! There are three key components to the code base:
+Now that our hardware and cloud instance is setup, we want to write code on the Raspberry Pi to read the temperature sensor and send this data to our Table Storage in Microsoft Azure. We will use two pieces of code to do this. We also want to ensure the code runs as soon as the Raspberry Pi turns on.
+
 1) The temperature reading code
 2) The upload code
 3) Code to continuously upload
