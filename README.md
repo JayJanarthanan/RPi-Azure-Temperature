@@ -28,11 +28,13 @@ Create a new Storage account by:
 3) Press Create. Your storage instance will now be created.  
 
 
-![alt tag](images/1.png)
+![Table Storage Creation](images/1.png?raw=true "Table Storage Creatione")
 
 4) Once it has been created, find and save the access keys, mainly:
 - Storage Account Name
 - Access keys (KEY1)  
+
+![Access Keys](images/2.png?raw=true "Access Keys")
 
 5) Your Azure storage account is ready to go! Now it's time to wire up the Raspberry Pi.
 
@@ -41,6 +43,8 @@ Create a new Storage account by:
 If you are using a normal DS18B20 sensor, you will need to use a 4.7k resistor for pullup. The other option is the DS18B20-PAR sensor, which is parasitic and can be plugged in directly into the Raspberry Pi. We have used the PAR sensor for this tutorial for simplicity. 
 
 Please follow this diagram to connect your sensor to the Raspberry Pi:
+
+![GPIO Diagram](images/gpio_diagram.png?raw=true "GPIO Diagram")
 
 ## The Raspberry Pi Code
 
