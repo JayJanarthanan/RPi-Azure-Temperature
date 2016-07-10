@@ -14,7 +14,7 @@ device_file = [device_folder[0] + '/w1_slave']
 
 
 def SendAzure():
-        table_service = TableService(account_name='tempi', account_key='pRpc+nJ+IyU6sOSDRHrBmVB/MW9mEEOSoIB8AvZMkWT1qgcOBzFEFqw/DsoCwZlQQ+PvHq14rwX7x0xhVaoS8g==')
+        table_service = TableService(account_name='[NAMEHERE]', account_key='[KEYHERE]')
         table_name = 'tempData'
         partition_key = 'central'
         table_service.create_table(table_name, False)
