@@ -28,13 +28,13 @@ Create a new Storage account by:
 3) Press Create. Your storage instance will now be created.  
 
 
-![Table Storage Creation](images/1.png?raw=true "Table Storage Creatione")
+![Table Storage Creation](images/creation.png?raw=true "Table Storage Creatione")
 
 4) Once it has been created, find and save the access keys, mainly:
 - Storage Account Name
 - Access keys (KEY1)  
 
-![Access Keys](images/2.png?raw=true "Access Keys")
+![Access Keys](images/access_key.png?raw=true "Access Keys")
 
 5) Your Azure storage account is ready to go! Now it's time to wire up the Raspberry Pi.
 
@@ -48,11 +48,21 @@ Please follow this diagram to connect your sensor to the Raspberry Pi:
 
 ## The Raspberry Pi Code
 
-Now that our hardware and cloud instance is setup, we want to write code on the Raspberry Pi to read the temperature sensor and send this data to our Table Storage in Microsoft Azure. We will use two pieces of code to do this. We also want to ensure the code runs as soon as the Raspberry Pi turns on.
+Now that our hardware and cloud instance is setup, we want to write code on the Raspberry Pi to read the temperature sensor and send this data to our Table Storage in Microsoft Azure. We will use two pieces of code to do this.
 
-1) The temperature reading code
-2) The upload code
-3) Code to continuously upload
+Save the code below in the /home/pi directory. 
+
+1) ![The temperature reading code] (temp.py)
+2) ![The upload code] (azuresend.py)
+
+We need to constantly upload temperature data while not freezing the system or having the possibility of the python script exiting. The ideal solution to this is to have a cronjob which triggers the upload code once every 10 minutes (or as you please).
+
+To do this, type `sudo crontab -e` in your console
+
+Then at the end of the cron file, write:
+
+`10 * * * * /home/pi/azuresend.py`
+
 
 ## Linking it all together
 
