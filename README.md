@@ -69,6 +69,8 @@ Write `sudo reboot` into the console to restart the Raspberry Pi. On start, it s
 
 ## Reading the data
 
-
+This is a work in progress. We want to hook up Table Storage to something like PowerBI where we can crunch the data. I'm still trying to figure out an effective way to transfer the table storage data to another platform.
 
 ## Final Comments
+
+You are welcome to use this code for any purpose! I hope you found this guide handy.
