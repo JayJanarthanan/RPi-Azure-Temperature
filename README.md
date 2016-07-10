@@ -28,7 +28,7 @@ Create a new Storage account by:
 3) Press Create. Your storage instance will now be created.  
 
 
-![Table Storage Creation](images/creation.png?raw=true "Table Storage Creatione")
+![Table Storage Creation](images/creation.png?raw=true "Table Storage Creation")
 
 4) Once it has been created, find and save the access keys, mainly:
 - Storage Account Name
@@ -69,7 +69,11 @@ Write `sudo reboot` into the console to restart the Raspberry Pi. On start, it s
 
 ## Reading the data
 
-This is a work in progress. We want to hook up Table Storage to something like PowerBI where we can crunch the data. I'm still trying to figure out an effective way to transfer the table storage data to another platform.
+This is a work in progress. We want to hook up Table Storage to something like PowerBI where we can crunch the data. I'm still trying to figure out an effective way to transfer the table storage data to another platform.  
+
+For now, I'm using [Microsoft Azure Storage Explorer](http://storageexplorer.com/) to navigate my data. Download the tool, log in using your Microsoft Azure Account, select your subscriptions and view the dataset.
+
+![Storage Explorer](images/storage.png?raw=true "Storage")
 
 ## Final Comments
 
