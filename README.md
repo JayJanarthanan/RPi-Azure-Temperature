@@ -1,5 +1,5 @@
 # RPi Azure Temperature Logger
-This repo will show you how to upload temperature to Microsoft Azure via Raspberry Pi
+This guide will show you how to connect your Raspberry Pi to the Microsoft Azure cloud and utilise Azure Table Storage to log temperature (or other) data from your Raspberry Pi.
 
 ## Introduction
 
